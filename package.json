@@ -1,5 +1,5 @@
 {
-    "name": "template-react-typesctipt",
+    "name": "amino-acid-quiz",
     "version": "0.1.0",
     "private": false,
     "homepage": "./",
@@ -81,5 +81,5 @@
             "node"
         ]
     },
-    "port": 12018
+    "port": 54533
 }
