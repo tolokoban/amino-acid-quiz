@@ -1,0 +1,24 @@
+.view-QuizView div.formula {
+    width: 100%;
+    background: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: .25rem;
+}
+
+.view-QuizView div.attribute {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.view-QuizView div.attribute .hide {
+    transition: all .5s;
+    opacity: 0;
+}
+
+.view-QuizView div.attribute .show {
+    transition: all .5s;
+    opacity: 1;
+}

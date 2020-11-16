@@ -4,9 +4,12 @@ interface IAppProps {
     className?: string;
 }
 interface IAppState {
+    formula: string;
 }
 export default class App extends React.Component<IAppProps, IAppState> {
-    state: {};
+    state: IAppState;
+    private readonly handleFormulaChange;
+    private readonly parseFormula;
     render(): JSX.Element;
 }
 export {};

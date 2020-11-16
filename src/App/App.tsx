@@ -2,7 +2,8 @@ import React from "react"
 import Button from 'tfw/view/button'
 import Input from 'tfw/view/input'
 import Debouncer from 'tfw/async/debouncer'
-import AminoAcid from '../view/amino-acid'
+//import AminoAcid from '../view/amino-acid'
+import QuizView from '../view/quiz'
 
 import "./App.css"
 
@@ -40,7 +41,8 @@ export default class App extends React.Component<IAppProps, IAppState> {
 
         return (<div className={classes.join(' ')}>
             <section className="thm-bg1">
-                <Input
+                <QuizView />
+                {/* <Input
                     label="Enter schema formula"
                     value={formula}
                     wide={true}
@@ -57,7 +59,7 @@ export default class App extends React.Component<IAppProps, IAppState> {
                 link modifier are for the last one that is connected to the first
                 atom.
                 </p>
-                <AminoAcid formula={formula} />
+                <AminoAcid formula={formula} /> */}
             </section>
         </div>)
     }
