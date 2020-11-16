@@ -6,11 +6,17 @@
     border-radius: .25rem;
 }
 
+.view-QuizView div.formula > img {
+    height: 200px;
+    max-width: 90vw;
+}
+
 .view-QuizView div.attribute {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: -1rem;
 } 
 
 .view-QuizView div.attribute .hide {
@@ -21,4 +27,8 @@
 .view-QuizView div.attribute .show {
     transition: all .5s;
     opacity: 1;
+}
+
+.view-QuizView div.attribute .tfw-view-Combo.custom {
+    max-width: 80vw;
 }

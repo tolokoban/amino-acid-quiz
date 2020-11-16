@@ -43,6 +43,7 @@ export default class QuizView extends React.Component<IQuizViewProps, IQuizViewS
         return <div className="attribute" key={name}>
             <Combo
                 label={label}
+                wide={true}
                 value={proposedValue}
                 onChange={value => this.setState({
                     candidate: {
@@ -87,7 +88,7 @@ export default class QuizView extends React.Component<IQuizViewProps, IQuizViewS
         return <div className={classNames.join(" ")}>
             <h1>C'est quoi cette bête ?</h1>
             <div className="formula">
-                <img height={200} src={solution.image} />
+                <img src={solution.image} />
             </div>
             {this.renderAtt("name", "Nom de la bête")}
             {this.renderAtt("abbrevShort", "Abbréviation (courte)")}
